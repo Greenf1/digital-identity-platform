@@ -1,4 +1,5 @@
-# digital-identity-platform
+# digital-identity-platform IDFAD
+
 Cette documentation décrit une version améliorée de la plateforme d’identité numérique IDFAD, désormais conteneurisée avec Docker et utilisant PostgreSQL comme base de données persistante.
 Documentation de la Plateforme d’Identité Numérique IDFAD (Version Conteneurisée)
 Cette documentation décrit une version améliorée de la plateforme d’identité numérique IDFAD, désormais conteneurisée avec Docker et utilisant PostgreSQL comme base de données persistante. Elle inclut également une explication des défis rencontrés lors de l’implémentation dans l’environnement de sandbox.
@@ -59,12 +60,4 @@ Si vous utilisez un environnement de sandbox ou une machine virtuelle, l’URL p
 Utilisez l’interface web pour :
 	◦	Enregistrer une Identité : Remplissez les champs “Nom Complet”, “Date de Naissance” et “Empreinte Digitale” (simulée) et cliquez sur “Enregistrer”. Un ID d’identité sera généré.
 	◦	Authentifier une Identité : Utilisez l’ID d’identité et l’empreinte digitale pour tenter une authentification.
-	◦	Voir les Identités : Cliquez sur le bouton pour lister toutes les identités enregistrées dans la base de données.
-6. Problèmes Rencontrés dans l’Environnement de Sandbox
-Lors du développement de cette application dans l’environnement de sandbox, plusieurs problèmes liés à Docker ont été rencontrés, rendant le déploiement direct via `docker-compose up` difficile :
-	•	Permissions du démon Docker : Des erreurs de permission (`permission denied while trying to connect to the Docker daemon socket`) ont été fréquentes, nécessitant des ajustements manuels des permissions (`sudo usermod -aG docker ubuntu` et `newgrp docker`) et des redémarrages du service Docker.
-	•	Problèmes de communication Docker : Des erreurs de type `Error while fetching server API version: Not supported URL scheme http+docker` ont persisté, indiquant des difficultés pour Docker Compose à communiquer avec le démon Docker, même après avoir ajusté les permissions et redémarré le service.
-	•	Stabilité de l’environnement : L’environnement de sandbox peut parfois présenter une instabilité avec les services Docker, entraînant des échecs inattendus lors de la construction ou du démarrage des conteneurs.
-Ces problèmes ont empêché une démonstration en direct de l’application conteneurisée dans cet environnement. Cependant, les fichiers `Dockerfile` et `docker-compose.yml` sont correctement configurés et devraient fonctionner sans problème dans un environnement Docker local ou un serveur avec une configuration Docker stable.
-7. Conclusion
-Cette version conteneurisée de la plateforme d’identité numérique IDFAD démontre une approche plus robuste et portable pour le développement d’applications d’identité. Bien que des défis aient été rencontrés dans l’environnement de sandbox, l’architecture et le code fournis sont solides et prêts à être déployés dans un environnement de production. Les concepts d’API RESTful, de base de données persistante et de conteneurisation sont des éléments clés pour la construction de systèmes d’identité modernes et évolutifs.
+	◦	Voir les Identités : Cliquez sur le bouton pour lister toutes les identités enregistrées dans la base de données..
