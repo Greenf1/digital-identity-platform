@@ -1,7 +1,5 @@
 # digital-identity-platform IDFAD
 
-# Plateforme d'Identité Numérique (IDFAD) Améliorée
-
 ## Introduction
 
 Ce projet présente une version améliorée de la plateforme d'identité numérique IDFAD, conçue pour une gestion robuste et sécurisée des identités. Cette nouvelle itération est conteneurisée à l'aide de Docker, garantissant une portabilité et une scalabilité accrues, et utilise PostgreSQL comme base de données persistante pour une intégrité et une performance optimales des données.
