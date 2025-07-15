@@ -60,6 +60,8 @@ Nous accueillons les contributions ! Si vous souhaitez améliorer ce projet, veu
 ## Licence
 
 Ce projet est sous licence 
-## Contact:contact@greenfad.tech
+## Contact:
+contact@greenfad.tech
 
-Pour toute question ou suggestion, veuillez contacter [GreenFad.tech (https://github.com/Greenf1).
+Pour toute question ou suggestion, veuillez contacter GreenFad.tech 
+(https://github.com/Greenf1).
